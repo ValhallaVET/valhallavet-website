@@ -1,0 +1,12 @@
+.App {
+  align-items: center;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+img {
+  width: 100%;
+}
