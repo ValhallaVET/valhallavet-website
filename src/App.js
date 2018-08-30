@@ -1,12 +1,36 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import Button from './components/Button';
 import Stage from './components/Stage';
 import './App.css';
 
-const Footer = styled.footer`
+const Title = styled.h2`
+  color: #0F5AD9;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 2vw;
+  letter-spacing: 16px;
+  margin: 0;
+  text-transform: uppercase;
+  width: 100%;
 `;
+
+const Footer = styled.footer`
+  position: relative;
+  z-index: 1;
+`;
+
+const Links = styled.div`
+  margin-top: 20px;
+  text-align: center;
+`;
+
+const Link = styled.a`
+  color: #BAC0C4;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+`
 
 class App extends Component {
   render() {
@@ -14,8 +38,10 @@ class App extends Component {
       <div className="App">
         <Stage />
         <Footer>
-          <Button>Github</Button>
-          <Button>Test</Button>
+          <Title>Valhalla Awaits</Title>
+          <Links>
+            <Link href="https://github.com/ValhallaVET">Github</Link>
+          </Links>
         </Footer>
       </div>
     );

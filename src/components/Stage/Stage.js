@@ -11,8 +11,8 @@ const Wrapper = styled.div`
   background-size: contain;
   position: relative;
   display: block;
-  height: 75vh;
-  width: 75vw;
+  height: 65vh;
+  width: 65vw;
 `;
 
 class Stage extends Component {
