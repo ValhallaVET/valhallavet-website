@@ -10,6 +10,7 @@ const Title = styled.h2`
   font-size: 2vw;
   letter-spacing: 16px;
   margin: 0;
+  margin-bottom: auto;
   text-transform: uppercase;
   width: 100%;
 `;

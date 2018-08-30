@@ -7,11 +7,9 @@ import city from './stage.png';
 import { Clouds, Stars, Moon, Sun, Space } from '../Scenes';
 
 const Wrapper = styled.div`
-  background: url(${city}) no-repeat center;
-  background-size: contain;
   position: relative;
   display: block;
-  height: 70vh;
+  height: auto;
   width: 70vw;
 `;
 
@@ -38,6 +36,7 @@ class Stage extends Component {
   render() {
     return (
       <Wrapper innerRef={this.ref}>
+        <img src={city} data-depth="0" />
         <Space depth="-0.01" />
         <Moon depth="-0.03" />
         <Clouds depth="0.08" />
