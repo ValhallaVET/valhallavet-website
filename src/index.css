@@ -16,3 +16,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  color: #7D8794;
+  font-family: 'Muli', sans-serif;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 2em;
+}

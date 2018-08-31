@@ -7,7 +7,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 WebFont.load({
   google: {
-    families: ['Josefin Sans:400,600']
+    families: ['Josefin Sans:400,600', 'Muli:600']
   }
 });
 

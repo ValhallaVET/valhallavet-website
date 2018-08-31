@@ -16,21 +16,46 @@ const Title = styled.h2`
 `;
 
 const Footer = styled.footer`
+  text-align: center;
   position: relative;
   z-index: 1;
 `;
 
 const Links = styled.div`
-  margin-top: 20px;
-  text-align: center;
+ text-align: center;
 `;
 
 const Link = styled.a`
-  color: #BAC0C4;
-  font-family: 'Josefin Sans', sans-serif;
+  color: #7D8794;
+  display: inline-block;
+  font-family: 'Muli', sans-serif;
   font-weight: 600;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  position: relative;
+
+  &:after {
+    background: #7D8794;
+    bottom: -12px;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 3px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    transition: all .08s linear;
+  }
+
+  &:hover {
+    color: #0F5AD9;
+
+    &:after {
+      background: #0F5AD9;
+      width: 100%;
+    }
+  }
 `
 
 class App extends Component {
@@ -40,6 +65,7 @@ class App extends Component {
         <Stage />
         <Footer>
           <Title>Valhalla Awaits</Title>
+          <p>We’re the unofficial community-driven development community for VeChain. <br />We build sites, tools, and dapps for the benefit of the VeChain ecosystem. <br />Please join us and let’s build something incredible together</p>
           <Links>
             <Link href="https://github.com/ValhallaVET">Github</Link>
           </Links>
