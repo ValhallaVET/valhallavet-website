@@ -10,8 +10,8 @@ const Wrapper = styled.div`
   position: relative;
   display: block;
   height: auto;
-  margin-top: -100px;
-  width: 70vw;
+  margin-top: -50px;
+  width: 60vw;
 `;
 
 class Stage extends Component {

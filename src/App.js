@@ -16,6 +16,7 @@ const Title = styled.h2`
 `;
 
 const Footer = styled.footer`
+  margin-top: 20px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -30,7 +31,6 @@ const Link = styled.a`
   display: inline-block;
   font-family: 'Muli', sans-serif;
   font-weight: 600;
-  letter-spacing: 2px;
   position: relative;
 
   &:after {
