@@ -49,10 +49,10 @@ class Stage extends Component {
         <Moon depth="-0.03" />
         <Clouds depth="0.08" />
         <Sun depth="-0.03" />
-        <Lightning depth="-0.08" />
-        <Stars depth="-0.02" />
+        <Lightning depth="0.02" />
+        <Stars depth="-0.01" />
       </Wrapper>
-    );
+    )
   }
 }
 
