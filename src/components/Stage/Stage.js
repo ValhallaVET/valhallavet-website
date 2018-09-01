@@ -4,7 +4,14 @@ import Parallax from 'parallax-js';
 
 import city from './stage.png';
 
-import { Clouds, Stars, Moon, Sun, Space } from '../Scenes';
+import { 
+  Clouds, 
+  Stars, 
+  Moon, 
+  Sun, 
+  Space,
+  Lightning,
+} from '../Scenes';
 
 const Wrapper = styled.div`
   position: relative;
@@ -42,6 +49,7 @@ class Stage extends Component {
         <Moon depth="-0.03" />
         <Clouds depth="0.08" />
         <Sun depth="-0.03" />
+        <Lightning depth="-0.08" />
         <Stars depth="-0.02" />
       </Wrapper>
     );
