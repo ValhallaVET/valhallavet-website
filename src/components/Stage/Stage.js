@@ -44,7 +44,7 @@ class Stage extends Component {
   render() {
     return (
       <Wrapper innerRef={this.ref}>
-        <img src={city} data-depth="0" />
+        <img src={city} data-depth="0" alt="Stage" />
         <Space depth="-0.01" />
         <Moon depth="-0.03" />
         <Clouds depth="0.08" />

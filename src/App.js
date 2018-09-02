@@ -37,10 +37,11 @@ const Title = styled.h2`
 `;
 
 const Footer = styled.footer`
-  margin-top: 20px;
-  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
   position: relative;
   z-index: 1;
+  width: 10vmax;
 
   @media all and (max-width: 960px) {
     p {
@@ -50,7 +51,8 @@ const Footer = styled.footer`
 `;
 
 const Links = styled.div`
- text-align: center;
+  display: flex;
+  justify-content: space-around;
 `;
 
 const Link = styled.a`
@@ -58,6 +60,7 @@ const Link = styled.a`
   display: inline-block;
   font-family: 'Muli', sans-serif;
   font-weight: 600;
+  margin: 0 20px;
   position: relative;
 
   @media all and (max-width: 960px) {
@@ -99,7 +102,17 @@ const Link = styled.a`
       color: #140A5E;
     }
   }
-`
+`;
+
+const Body = styled.div`
+  margin-top: 20px;
+  text-align: center;
+`;
+
+const Description = styled.p`
+  margin: 0 auto;
+  width: 30vmax;
+`;
 
 class App extends Component {
   render() {
@@ -108,11 +121,14 @@ class App extends Component {
         <Media query="(min-width: 960px)" render={() => (
           <Stage />
         )} />
-        <Footer>
+        <Body>
           <Title>Valhalla Awaits</Title>
-          <p>We’re the unofficial community-driven development community for VeChain. <br />We build sites, tools, and dapps for the benefit of the VeChain ecosystem. <br />Please join us and let’s build something incredible together</p>
+          <Description>We’re the unofficial community-driven development community for VeChain. We build sites, tools, and dapps for the benefit of the VeChain ecosystem. Please join us and let’s build something incredible together.</Description>
+        </Body>
+        <Footer>
           <Links>
             <Link href="https://github.com/ValhallaVET">Github</Link>
+            <Link href="mailto:1800kenneth@gmail.com">Contact</Link>
           </Links>
         </Footer>
       </StyledApp>

@@ -15,7 +15,7 @@ class Lightning extends Component {
   render() {
     return (
       <Wrapper data-depth={this.props.depth}>
-        <img src={image} />
+        <img src={image} alt="Lightning" />
       </Wrapper>
     );
   }
