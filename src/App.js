@@ -67,36 +67,8 @@ const Link = styled.a`
     color: #ffffff;
   }
 
-  &:after {
-    background: #7D8794;
-    bottom: -12px;
-    content: "";
-    display: block;
-    width: 50%;
-    height: 3px;
-    left: 0;
-    right: 0;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    transition: all .08s linear;
-
-    @media all and (max-width: 960px) {
-      background: #ffffff;
-    }
-  }
-
   &:hover {
     color: #0F5AD9;
-
-    &:after {
-      background: #0F5AD9;
-      width: 100%;
-
-      @media all and (max-width: 960px) {
-        background: #140A5E;
-      }
-    }
 
     @media all and (max-width: 960px) {
       color: #140A5E;
