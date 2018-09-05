@@ -101,6 +101,7 @@ class App extends Component {
           <Links>
             <Link href="https://github.com/ValhallaVET">Github</Link>
             <Link href="mailto:mac@blockparty.community">Contact</Link>
+            <Link href="https://discord.gg/SZFdD2">Discord</Link>
           </Links>
         </Footer>
       </StyledApp>
